@@ -44,6 +44,3 @@ StudyPal/
 │ ├── index.html # Upload page
 │ └── result.html # Output page
 └── README.md # Project documentation
-
-yaml
-Copy code
