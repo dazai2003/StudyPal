@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyPal - Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #F5F5F5; color: #333; }
+        h1, h2 { color: #2C3E50; }
+        .container { max-width: 900px; margin: auto; }
+        textarea { width: 100%; height: 200px; margin-bottom: 20px; padding: 10px; }
+        img { max-width: 100%; height: auto; margin-bottom: 20px; border: 1px solid #ccc; padding: 5px; }
+        a.button { display: inline-block; margin-right: 10px; padding: 10px 15px; background-color: #E67E22; color: #fff; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>StudyPal - Result</h1>
+
+        <h2>Uploaded Image:</h2>
+        <img src="{{ url_for('static', filename='uploads/' + uploaded_filename) }}" alt="Uploaded Image">
+
+        <h2>Extracted Text (OCR):</h2>
+        <textarea readonly>{{ extracted_text }}</textarea>
+
+        <h2>Summary:</h2>
+        <textarea readonly>{{ summary }}</textarea>
+
+        <h2>Download Summary:</h2>
+        <a class="button" href="{{ txt_url }}">Download TXT</a>
+        <a class="button" href="{{ pdf_url }}">Download PDF</a>
+
+        <br><br>
+        <a class="button" href="{{ url_for('index') }}">Upload Another Image</a>
+    </div>
+</body>
+</html>

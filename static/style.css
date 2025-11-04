@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background:#f7f7f7; color:#333; padding:20px; }
+.container { max-width:900px; margin:0 auto; background:white; padding:20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+.row { display:flex; gap:20px; }
+.col { flex:1; }
+pre { background:#eee; padding:12px; white-space:pre-wrap; }
+.summary-box { background:#fcfcf2; padding:12px; border-left:4px solid #f1c40f; }

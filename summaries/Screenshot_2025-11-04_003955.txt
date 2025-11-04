@@ -1,0 +1,1 @@
+StadyPal is a smart note-taking web application that allows students to upload images of notes in Sinhala or English. It automatically extract the text using Optical CharacterRecogntition, (OCR), snd generate concise, Al-powered summaries. By combiting OCR with advanced text summarization, StndyPal aims to reduce stady time, improve StadyPal.
